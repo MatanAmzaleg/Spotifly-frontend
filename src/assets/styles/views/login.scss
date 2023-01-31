@@ -1,0 +1,41 @@
+.login-section{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(#28313B, #485461);
+
+    .login-form{
+        width: 50%;
+        height: 60vh;
+        justify-content: center;
+        align-items: center;
+
+        .main-title{
+            font-family: "Gotham-Bold";
+            color: white;
+            font-size: 4rem;
+            position: relative;
+            bottom: 100px;
+        }
+             
+        .login-btn{
+            display: block;
+            background-color: #1DD05D;
+            color: white;
+            padding: 10px;
+            padding-inline: 50px;
+            width: max-content;
+            font-size: 20px;
+            border-radius: 5px;
+            font-family: "Gotham-Bold";
+
+            &:hover{
+                background-color: #1bc255;
+            }
+        }
+        
+    }
+
+}

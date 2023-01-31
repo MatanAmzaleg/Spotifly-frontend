@@ -1,0 +1,51 @@
+.right-nav {
+  width: 30%;
+  max-width: 350px;
+  min-width: 200px;
+  background-color: black;
+  color: white;
+
+  > * {
+    padding-inline-start: 30px;
+  }
+
+  .main-title {
+    padding-top: 35px;
+    font-size: 2.5rem;
+    font-weight: 800;
+    cursor: default;
+  }
+
+  .bottom-hr {
+    border: none;
+    height: 1px;
+    background-color: rgb(67, 67, 67);
+    width: 90%;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+
+  .nav-link {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+
+    &:hover {
+      color: rgb(213, 213, 213);
+    }
+
+    .icon-w {
+      width: 27px;
+      margin-inline-end: 5px;
+    }
+  }
+
+  .nav-link:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}

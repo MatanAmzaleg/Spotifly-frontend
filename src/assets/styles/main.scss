@@ -1,0 +1,49 @@
+//CMPS
+@import "./cmps/right-nav.scss";
+@import "./cmps/song-list.scss";
+@import "./cmps/song-preview.scss";
+@import "./cmps/player.scss";
+
+//VIEWS
+@import "./views/dashboard.scss";
+@import "./views/login.scss";
+@import "./views/search.scss";
+
+//HELPERS
+@import "./helpers/helpers.scss";
+@import "./helpers/typography.scss";
+
+
+.main-app{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+
+    .content{
+        height: 91vh;
+    }
+}
+
+#root{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gotham-Light";
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button{
+    cursor: pointer;
+    border:none;
+    background-color: inherit;
+}

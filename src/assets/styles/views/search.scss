@@ -1,0 +1,30 @@
+.search-section{
+    flex-grow: 1;
+    background-color: #121212;
+
+    .header{
+        height: 10vh;
+        padding-top: 10px;
+        padding-inline-start: 20px;
+        justify-content: space-between;
+        color: white;
+
+        .search-input{
+            width: 35%;
+            min-width: 320px;
+            height: 45px;
+            border-radius: 30px;
+            padding-inline-start: 10px;
+
+            &:focus-visible{
+                outline: none;
+            }
+        }
+    }
+
+    .main-content{
+        color: rgb(206, 206, 206);
+        height: 50vh;
+        padding-inline-start: 20px;
+    }
+}

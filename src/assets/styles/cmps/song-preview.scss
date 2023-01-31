@@ -1,0 +1,30 @@
+.song-preview{
+    align-items: center;
+    justify-content: space-between;
+    height: 20%;
+    border-bottom: 1px solid rgb(39, 39, 39);
+    cursor: pointer;
+    padding-inline-end: 15px;
+
+    &:hover{
+        background-color: rgb(27, 27, 27);
+    }
+
+    .info-sec{
+        img{
+            margin-inline-end: 10px;
+        }
+
+        .titles{
+            justify-content: space-between;
+            padding-block: 9px;
+
+            h1{
+                font-size: 16px;
+            }
+            h3{
+                font-size: 11px;
+            }
+        }
+    }
+}

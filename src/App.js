@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { Login } from "./views/Login";
+import { Dashboard } from "./views/Dashboard";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import { RightNav } from "./cmps/RightNav";
+import { Search } from "./views/Search"
+import { Player } from "./cmps/Player";
+import { useState } from "react";
+
+const code = new URLSearchParams(window.location.search).get("code");
 
 function App() {
+  const [currSong, setCurrSong] = useState()
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <section className="main-app flex column">
+        <div className="content flex">
+
+      {code ? <RightNav></RightNav> : null}
+      <Routes>  
+        <Route path="/login" element={<Login></Login>}></Route>
+        <Route exact path="/" element={<Dashboard code={code}></Dashboard>}></Route>
+        <Route path="/search" element={<Search code={code}></Search>}></Route>
+      </Routes>
+        </div>
+      {code ? <Player trackUri={currSong}></Player> : null}
+      </section>
+    </Router>
   );
 }
 
